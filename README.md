@@ -150,7 +150,7 @@ In this example we gonna learn the SQL example , it is good to start learning
 let's start by creating the changeLog file:
 the change log file will contains the sql file in a tag named include.
 you can list multiple files
-![image](https://github.com/user-attachments/assets/56644090-5186-4c95-9ec4-0cf4c11cd2c6)
+![image](https://github.com/user-attachments/assets/088c80ca-ba1b-4304-b494-ead325aa8225)
 
 and the sql file which will be used to create  a table named Persons in our database "mydatabase":
 ![image](https://github.com/user-attachments/assets/a2c392d2-d252-477e-be8d-96941fb675e3)
@@ -174,5 +174,6 @@ the database is empty now:
 ![image](https://github.com/user-attachments/assets/3fe84150-da5e-4f67-a7a6-1ff870a53868)
 
 let's run the liquibase changeLog using : liquibase update
-
+![image](https://github.com/user-attachments/assets/00e94156-440c-4fce-a5f9-9dd6dcd0254c)
+ as we can see the sql file is well executed.
 
