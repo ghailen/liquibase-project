@@ -91,26 +91,18 @@ a. XML Changelog (most common)
     1 - Verbose and structured.
 
     2 - Supports all Liquibase features.
-  example: <databaseChangeLog>...</databaseChangeLog>
+  example: 
+  ![image](https://github.com/user-attachments/assets/28d29222-4c2d-4aac-82b7-e3ad97f8a70a)
+
 
 b. YAML Changelog
 
     Cleaner syntax, less verbose than XML.
 
 example:
-    databaseChangeLog:
-  - changeSet:
-      id: 1
-      author: dev
-      changes:
-        - createTable:
-            tableName: user
-            columns:
-              - column:
-                  name: id
-                  type: int
+![image](https://github.com/user-attachments/assets/735faf36-0586-45ff-85f6-c90a458e0706)
 
-  
+
 c. JSON Changelog
 
     JSON representation of the same changelog structure.
@@ -141,9 +133,9 @@ d. SQL Changelog
     Less flexible (no rollback automation unless explicitly written).
 
   example:
-  --liquibase formatted sql
-  --changeset user:1
-  CREATE TABLE user (id INT, name VARCHAR(255));
+
+  ![image](https://github.com/user-attachments/assets/5cfeb6ca-7618-4f37-bef0-3744338a7638)
+
 
 
 In this example we gonna learn the SQL example , it is good to start learning 
