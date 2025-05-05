@@ -161,9 +161,18 @@ first of all download postgres jar from this url :
 https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.2/
 
 and then add this properties:
-![image](https://github.com/user-attachments/assets/0f6557d7-ae9d-48d1-858f-64cf5977757b)
+![image](https://github.com/user-attachments/assets/76194477-9a34-444d-a366-037fd8f73c85)
+
 
 so the structure of the project must be like this:
 ![image](https://github.com/user-attachments/assets/75506724-8a8e-427f-a988-1917544dc845)
+
+if you are facing a problem with the connection to postgres using dbeaver try to check in services the postgres if it is activated or disabled in order to access it:
+![image](https://github.com/user-attachments/assets/f86538c4-cf7c-460e-928a-1e2f784a4eff)
+
+the database is empty now:
+![image](https://github.com/user-attachments/assets/3fe84150-da5e-4f67-a7a6-1ff870a53868)
+
+let's run the liquibase changeLog using : liquibase update
 
 
