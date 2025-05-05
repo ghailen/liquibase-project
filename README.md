@@ -234,6 +234,23 @@ now to exectute the rollback command we need to enter this command: liquibase ro
 
 For information, we can put the rollback as empty like this : --rollback empty
 
+
+Rollback type :
+ * Rollback using tag:
+   liquibase --defaultsFile=liquibase.properties rollback v1.0
+
+
+ * Rollback using count:
+   liquibase rollbackCount 2
+
+ * Rollback until a date:
+
+   liquibase rollbackToDate 2025-05-05T10:00:00
+
+ *  Rollback of a file related to a specific changelog :
+
+   liquibase rollback v1.0 --rollbackScript=rollback.sql
+
 Log file :
 Every output in the console is logged into a file named output:
 ![image](https://github.com/user-attachments/assets/cb754b97-27c6-4e88-938c-08abdd95aa35)
