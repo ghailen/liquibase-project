@@ -85,6 +85,7 @@ Example:
 * Types of Changelogs in Liquibase
 
   Liquibase supports multiple formats for changelogs:
+  
 a. XML Changelog (most common)
 
     1 - Verbose and structured.
