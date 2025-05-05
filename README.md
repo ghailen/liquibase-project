@@ -33,7 +33,8 @@ use command : liquibase -v to check the version
 
 Now let s start by defining what are change-log and change-set and different type of change-log config:
 
-* ChangeLog
+*ChangeLog
+
 A changelog in Liquibase is an XML, YAML, JSON, or SQL file that contains a list of database changes (called changesets) that should be applied to a database.
 
     It serves as the master record of all changes you want Liquibase to manage.
@@ -113,8 +114,7 @@ c. JSON Changelog
 
     JSON representation of the same changelog structure.
 
-    {
-  "databaseChangeLog": [
+    {  "databaseChangeLog": [
     {
       "changeSet": {
         "id": "1",
@@ -130,9 +130,8 @@ c. JSON Changelog
           }
         ]
       }
-    }
-  ]
-}
+    }]}
+  
 
 d. SQL Changelog
 
