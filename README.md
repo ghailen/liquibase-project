@@ -147,3 +147,23 @@ d. SQL Changelog
 
 In this example we gonna learn the SQL example , it is good to start learning 
 
+let's start by creating the changeLog file:
+the change log file will contains the sql file in a tag named include.
+you can list multiple files
+![image](https://github.com/user-attachments/assets/56644090-5186-4c95-9ec4-0cf4c11cd2c6)
+
+and the sql file which will be used to create  a table named Persons in our database "mydatabase":
+![image](https://github.com/user-attachments/assets/a2c392d2-d252-477e-be8d-96941fb675e3)
+
+
+Let's start by creating the liquibase properties file which contains configuration to connect to postgesql server and mention the changelog file:
+first of all download postgres jar from this url :
+https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.2/
+
+and then add this properties:
+![image](https://github.com/user-attachments/assets/0f6557d7-ae9d-48d1-858f-64cf5977757b)
+
+so the structure of the project must be like this:
+![image](https://github.com/user-attachments/assets/75506724-8a8e-427f-a988-1917544dc845)
+
+
