@@ -214,7 +214,21 @@ as we can see no data is injected. we have only the row inserted before.
 if we want to replay the two files we need to delete them from databasechangelog table.
 
 now we want to delete the table and the injected row using rollback script, mentionned in the end of sql files.
+let's execute command : liquibase rollbackCount 2
+![image](https://github.com/user-attachments/assets/3eee8624-05a5-4b89-b446-7497807c7952)
+=> this will detele the last 2 changeset executed , and as we can see in the log of console the rollback of the two sql file is exectued, let's check the database:
+thee is no more table Persons:
+![image](https://github.com/user-attachments/assets/b43ab549-b558-4e06-b04b-fc7ecf597b73)
+also the changelog table become empty:
+![image](https://github.com/user-attachments/assets/b6de30fe-b69e-4a91-9219-e7a05db2986c)
+so the rollback script worked correctly.
 
+also we can do a rollback based on a tag, we need to associate a tag to the current state of the database, before executing the scripts.( we didn't add tags before playing script in our demo) but this is how to create a tag , first of all we need to create a tag with this command : liquibase tag v1.0
+This associates the v1.0 tag with the current state of the database after the update.
+![image](https://github.com/user-attachments/assets/dbcdf287-f61a-449a-b613-e5d90a23ed42)
 
+now to exectute the rollback command we need to enter this command: liquibase rollback v1.0
+
+For information, we can put the rollback as empty like this : --rollback empty
 
 
